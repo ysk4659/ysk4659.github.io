@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>
+	 
+			达夫弄主题餐厅 
+	 
+		</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- apple devices fullscreen -->
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="http://w3.laoqiang.net/attachment/images/global/wechat.jpg">
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+		<script type="text/javascript" src="resource\js\app\util.js"></script>
+	<script src="resource\js\require.js"></script>
+	<script type="text/javascript" src="resource\js\lib\jquery-1.11.1.min.js?v=20160906"></script>
+	<script type="text/javascript" src="resource\js\lib\mui.min.js?v=20160906"></script>
+	<script type="text/javascript" src="resource\js\app\common.js?v=20160906"></script>
+	<link href="resource\css\bootstrap.min.css?v=20160906" rel="stylesheet">
+	<link href="resource\css\common.min.css?v=20160906" rel="stylesheet">
+	<script type="text/javascript">
+	if(navigator.appName == 'Microsoft Internet Explorer'){
+		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+		}
+	}
+	window.sysinfo = {
+		'uniacid': '31',		'acid': '31',				'siteroot': 'http://w3.laoqiang.net/',
+		'siteurl': 'http://w3.laoqiang.net/app/index.php?i=31&c=site&a=site&do=detail&id=321',
+		'attachurl': 'http://w3.laoqiang.net/attachment/',
+		'attachurl_local': 'http://w3.laoqiang.net/attachment/',
+		'attachurl_remote': '',
+				'cookie' : {'pre': '3dc1_'}
+	};
+	// jssdk config 对象
+	jssdkconfig = null || {};
+	// 是否启用调试
+	jssdkconfig.debug = false;
+	jssdkconfig.jsApiList = [
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo',
+		'hideMenuItems',
+		'showMenuItems',
+		'hideAllNonBaseMenuItem',
+		'showAllNonBaseMenuItem',
+		'translateVoice',
+		'startRecord',
+		'stopRecord',
+		'onRecordEnd',
+		'playVoice',
+		'pauseVoice',
+		'stopVoice',
+		'uploadVoice',
+		'downloadVoice',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage',
+		'getNetworkType',
+		'openLocation',
+		'getLocation',
+		'hideOptionMenu',
+		'showOptionMenu',
+		'closeWindow',
+		'scanQRCode',
+		'chooseWXPay',
+		'openProductSpecificView',
+		'addCard',
+		'chooseCard',
+		'openCard',
+		'openAddress'
+	];
+	</script>
+</head>
+<body>
+<div class="container container-fill">
+<div id="activity-detail">
+<style type="text/css">
+@charset "utf-8";
+html{background:#FFF;color:#000;}
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset, img{border:0;}
+address, caption, cite, code, dfn,  th, var{font-style:normal;font-weight:normal;}
+ol, ul{list-style:none;}
+caption, th{text-align:left;}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:'';}
+abbr, acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input, textarea, select{font-size:100%;}
+legend{color:#000;}
+body{color:#222;background:#FBF5DF;font-family:Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial;height:100%;position:relative;}
+body > .tips{display:none;left:50%;padding:20px;position:fixed;text-align:center;top:50%;width:200px;z-index:100;}
+.page{padding:15px;}
+.page .page-error, .page .page-loading{line-height:30px;position:relative;text-align:center;}
+#activity-detail .page-bizinfo{border-bottom:1px dotted #CCC;}
+#activity-detail .page-bizinfo .header{padding:10px 10px 10px;}
+#activity-detail .page-bizinfo .header #activity-name{color:#000;font-size:20px;margin-bottom:5px;font-weight:bold;word-break:normal;word-wrap:break-word;}
+#activity-detail .page-bizinfo .header #post-date{color:#8c8c8c;font-size:11px;margin:0;}
+#activity-detail .page-content{padding:10px;}
+#activity-detail .page-content .media{margin-bottom:18px;}
+#activity-detail .page-content .media img{width:100%;}
+#activity-detail .page-content .text{color:#3e3e3e;font-size:1.5;line-height:1.5;width: 100%;overflow: hidden;zoom:1;}
+#activity-detail .page-content .text p{min-height:1.5em;min-height: 1.5em;word-wrap: break-word;word-break:break-all;}
+#activity-list .header{font-size:20px;}
+#activity-list .page-list{border:1px solid #ccc;border-radius:5px;margin:18px 0;overflow:hidden;}
+#activity-list .page-list .line.btn{border-radius:0;margin:0;text-align:left;}
+#activity-list .page-list .line.btn .checkbox{height:25px;line-height:25px;padding-left:35px;position:relative;}
+#activity-list .page-list .line.btn .checkbox .icons{background-color:#ccc;left:0;position:absolute;top:0;}
+#activity-list .page-list .line.btn.off .icons{background-image:none;}
+#activity-list #save.btn{background-image:linear-gradient(#22dd22, #009900);background-image:-moz-linear-gradient(#22dd22, #009900);background-image:-ms-linear-gradient(#22dd22, #009900);background-image:-o-linear-gradient(#22dd22, #009900);background-image:-webkit-gradient(linear, left top, left bottom, from(#22dd22), to(#009900));background-image:-webkit-linear-gradient(#22dd22, #009900);}
+.vm{vertical-align:middle;}
+.tc{text-align:center;}
+.db{display:block;}
+.dib{display:inline-block;}
+.b{font-weight:700;}
+.clr{clear:both;}
+.text img{max-width:100%;}
+.page-url{padding-top:18px;}
+.page-url-link{color:#607FA6;font-size:14px;text-decoration:none;text-shadow:0 1px #ffffff;-webkit-text-shadow:0 1px #ffffff;-moz-text-shadow:0 1px #ffffff;}
+#mbutton{padding:15px 10px 15px 10px; overflow:hidden; border-bottom:1px #DDD solid;}
+#mbutton > span{float:right; display:inline-block; background:#64301C; border:1px #DDD solid; color:#FFF; height:30px; line-height:30px; padding:0 10px; margin-left:10px;}
+#mcover{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);display:none;z-index:20000;}
+#mcover img{position:fixed;right: 18px;top:5px;width:260px;height:180px;z-index:20001;}
+</style>
+<div class="page-bizinfo">
+	<div class="header">
+		<h1 id="activity-name">印象达夫弄-环境</h1>
+		<span id="post-date">
+			<span>2017-11-16</span>
+			<span>老枪</span>
+									<span>阅读:22443次</span>
+		</span>
+	</div>
+</div>
+<div class="page-content">
+	<div class="text">
+		<p><span style="font-size: 18px;">掌柜寄语：</span></p><p><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp; 家，生命开始的地方，人的一生都在回家的路上。在同一屋檐下，他们生火、做饭，用食物凝聚家庭，慰藉家人。平淡无奇的锅碗瓢盆里盛满了中国式的人生，更折射出中国式伦理。人们成长、相爱、别离、团聚。家常美味，也是人生百味。</span></p><p style="text-align: right;"><span style="font-size: 18px;">2017年11月&nbsp; &nbsp; &nbsp;</span></p><p style="text-align: right;"><span style="font-size: 18px;"><br></span></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/VHww5Q7xxwF242424WVUXb2q7DX4q2.jpg" width="100%" alt="002.jpg"></p><p><br></p><p><span style="font-size: 18px;">【一楼等待区】</span></p><p><span style="font-size: 18px;"><br></span></p><p><span style="font-size: 18px;"><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/BwhmOL38zmkkKxhouziI83hLT8Ok3Z.jpg" width="100%" style="white-space: normal;"></span></p><p><span style="font-size: 18px;"><br></span></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/QQP22Qsdn4nZ5Qv344V44D4I1SQ2p2.jpg" width="100%" alt="004+1.jpg"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/T717l6W71W1ZsPzY0ZyzLCy61L06FA.jpg" width="100%" style=""></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/OR9490N1599i4lrjIL009JTP81lA8u.jpg" width="100%" alt="2002.jpg"><br></p><p><span style="font-size: 18px;"><br></span></p><p><span style="font-size: 18px;">【二楼雅座】</span><br></p><p><span style="font-size: 18px;"><br></span></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/K1LjPfVjpnJHNp9Pa0hphKYYkp03zD.jpg" width="100%" style="white-space: normal;"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/KNsCbnNFZ2s4HdSgCusN42ffc0QiUR.jpg" width="100%" alt="1002+1.jpg"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/iDab9aHHmA9lrd99aaa7H9M7a9hW7A.jpg" width="100%" style="white-space: normal;"></p><p><br></p><p><span style="font-size: 18px;">【三楼包厢】</span></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/uBwip3w3RTxpiwp0E06tXPmxr50iv2.jpg" width="100%" alt="IMG_8567.JPG"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/yw8618jw5WawKABkBWJQwZ5jJQZB6k.jpg" width="100%" alt="IMG_8568.JPG"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/FMeh6A8skHzMaWzA68KWz6K2UWSTUU.jpg" width="100%" alt="2004.jpg"><br></p><p><br></p><p><span style="font-size: 18px;">【四楼宴会厅】</span></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2018/07/amquwAVqUD1MVnjNanocxmpC6d66N9.jpg" width="100%" alt="sIMG_6174.jpg"></p><p><br></p><p><span style="font-size: 18px;">【后厨区】</span></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/p6DB7waWfSsHWQd31MF3f5D3DMqm7j.jpg" width="100%" alt="IMG_8569.JPG"></p><p><br></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/fhPoPOPO3JLp3Ph8p4lJAplhJddLdj.jpg" width="100%" alt="IMG_8570.JPG"></p><p><br></p><p style="text-align: center;"><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/Qz6MXmXw96IiyYlmD8Xo6D9jQ9mYDO.jpg" width="100%" alt="线条.jpg"></p><p><span style="font-size: 20px;"><br></span></p><p><img src="http://w3.laoqiang.net/attachment/images/31/2017/11/Cf5990j9ywc7y5j7590JzwOA4BwyVY.jpg" width="100%" alt="底部签名.jpg"></p>	</div>
+</div>
+</div>
+					<div class="text-center footer" style="margin:10px 0; width:100%; text-align:center; word-break:break-all;">
+																	&nbsp;&nbsp;			</div>
+																	</div>
+	<style>
+		h5{color:#555;}
+	</style>
+		<script type="text/javascript">
+	$(function(){
+		wx.config(jssdkconfig);
+		var $_share = {"desc":"\u5e73\u6de1\u65e0\u5947\u7684\u9505\u7897\u74e2\u76c6\u91cc\u76db\u6ee1\u4e86\u4e2d\u56fd\u5f0f\u7684\u4eba\u751f\uff0c\u66f4\u6298\u5c04\u51fa\u4e2d\u56fd\u5f0f\u4f26\u7406\u3002\u4eba\u4eec\u6210\u957f\u3001\u76f8\u7231\u3001\u522b\u79bb\u3001\u56e2\u805a\u3002\u5bb6\u5e38\u7f8e\u5473\uff0c\u4e5f\u662f\u4eba\u751f\u767e\u5473...","title":"\u5370\u8c61\u8fbe\u592b\u5f04-\u73af\u5883","imgUrl":"http:\/\/w3.laoqiang.net\/attachment\/images\/31\/2017\/11\/PpJjmPLIkxLm988JHIYLShiyAJPlsD.jpg","link":"http:\/\/w3.laoqiang.net\/app\/index.php?i=31&c=site&a=site&do=detail&id=321"};
+		if(typeof sharedata == 'undefined'){
+			sharedata = $_share;
+		} else {
+			sharedata['title'] = sharedata['title'] || $_share['title'];
+			sharedata['desc'] = sharedata['desc'] || $_share['desc'];
+			sharedata['link'] = sharedata['link'] || $_share['link'];
+			sharedata['imgUrl'] = sharedata['imgUrl'] || $_share['imgUrl'];
+		}
+		if(sharedata.imgUrl == ''){
+			var _share_img = $('body img:eq(0)').attr("src");
+			if(_share_img){
+				sharedata['imgUrl'] = util.tomedia(_share_img);
+			}
+		}
+		if(sharedata.imgUrl == ""){
+			sharedata.imgUrl = window.sysinfo.attachurl + 'images/global/wechat_share.jpg';
+		}
+		if(sharedata.desc == ''){
+			var _share_content = util.removeHTMLTag($('body').html());
+			if(typeof _share_content == 'string'){
+				sharedata.desc = _share_content.replace($_share['title'], '')
+			}
+		}
+		wx.ready(function () {
+			wx.onMenuShareAppMessage(sharedata);
+			wx.onMenuShareTimeline(sharedata);
+			wx.onMenuShareQQ(sharedata);
+			wx.onMenuShareWeibo(sharedata);
+		});
+					$('#category_show').click(function(){
+				$('.head .order').toggleClass('hide');
+				return false;
+			});
+			//文章点击和分享加积分
+						sharedata.success = function(){
+				var url = "./index.php?i=31&c=site&a=site&do=handsel&id=321&action=share&wxref=mp.weixin.qq.com#wechat_redirect";
+				$.post(url, function(dat){});
+			}
+				if ($('.js-quickmenu').size() > 0) {
+			// var h = $('.js-quickmenu .nav-home').height()+20+'px';
+			// $('body').css("padding-bottom",h);
+			// $('body .mui-content').css("bottom",h);
+		} else if($('.nav-menu-app').size() > 0) {
+			var h = $('.nav-menu-app').height()+'px';
+			$('body').css("padding-bottom",h);
+			$('.mui-content').css('bottom',h);
+		} else {
+			$('body').css("padding-bottom", "0");
+			$('.mui-content').css('bottom', "0");
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://w3.laoqiang.net/app/index.php?i=31&c=utility&a=visit&do=showjs&m="></script>
+<script>;</script><script type="text/javascript" src="http://w3.laoqiang.net/app/index.php?i=31&c=utility&a=visit&do=showjs&m="></script></body>
+</html>
